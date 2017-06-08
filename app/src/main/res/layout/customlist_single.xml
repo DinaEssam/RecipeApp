@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="310dp"
+    android:id="@+id/recipesimage"
+    android:scaleType="fitXY"
+  android:fitsSystemWindows="true"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recipetitle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="recipe title"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/category"
+        android:layout_below="@+id/recipesimage"
+        android:text="category"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:textAlignment="textStart"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:id="@+id/subcatogry"
+        android:layout_alignBaseline="@+id/category"
+        android:text="subcategory"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:textAlignment="textStart"
+
+        />
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/category"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="130dp"
+        style="?android:attr/ratingBarStyleSmall"
+        android:numStars="5"
+        android:stepSize="0.1"
+        android:isIndicator="true" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:id="@+id/star"
+    android:layout_below="@+id/category"
+    android:layout_marginTop="5dp"
+    android:text="Star Rate"
+    android:textStyle="normal"
+    android:textSize="20sp"
+    android:textAlignment="textStart"
+    />
+
+
+
+
+</RelativeLayout>

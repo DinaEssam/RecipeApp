@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.recipesapp.screen2">
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="200dp"
+        android:id="@+id/recipesimage2"
+        android:scaleType="fitXY"
+        android:fitsSystemWindows="true"
+        android:layout_alignTop="@+id/recipetitle2"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recipetitle2"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="recipe title"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/category2"
+        android:text="category"
+        android:textStyle="normal"
+        android:textSize="30sp"
+        android:textAlignment="textStart"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="49dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/backarrow"
+        android:layout_alignEnd="@+id/recipetitle2"
+        android:layout_marginEnd="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/subcatogry2"
+        android:text="subcategory"
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_above="@+id/rating2"
+        android:layout_alignStart="@+id/category2"
+        android:layout_marginBottom="14dp" />
+
+    <RatingBar
+        android:id="@+id/rating2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="7dp"
+        style="?android:attr/ratingBarStyleSmall"
+        android:numStars="5"
+        android:stepSize="0.1"
+        android:isIndicator="true"
+        android:layout_alignTop="@+id/star2"
+        android:layout_alignEnd="@+id/recipetitle2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:id="@+id/star2"
+        android:text="Rate"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimary"
+        android:layout_above="@+id/listIngredients"
+        android:layout_alignStart="@+id/subcatogry2" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listIngredients"
+        android:layout_below="@id/recipesimage2"
+        android:layout_marginBottom="180dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rating2"
+        android:id="@+id/instruction"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+       android:gravity="bottom"
+        android:text="Instructions"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/instruction"
+        android:id="@+id/instruction2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="9dp"
+        android:textSize="10sp"
+        android:gravity="bottom"
+        android:text="Instructions"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/backarrow"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+
+
+
+</RelativeLayout>
